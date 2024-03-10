@@ -68,3 +68,33 @@ connect_session.py::test_reconnection[aws_connect]
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
 ======================= 2 passed, 14 warnings in 10.49s ========================
 ```
+
+Test create_node.py
+```
+================================================================ test session starts =================================================================
+platform linux -- Python 3.10.13, pytest-8.1.1, pluggy-1.4.0
+rootdir: /workspaces/faaskeeper/tests
+plugins: anyio-4.2.0
+collected 7 items                                                                                                                                    
+
+create_node.py .
+......                                                                                                                         [100%]
+
+================================================================== warnings summary ==================================================================
+create_node.py::test_create_node[aws_connect]
+create_node.py::test_create_node[aws_connect]
+create_node.py::test_create_node[aws_connect]
+create_node.py::test_create_node[aws_connect]
+create_node.py::test_create_node[aws_connect]
+  /usr/local/python/3.10.13/lib/python3.10/site-packages/botocore/httpsession.py:57: DeprecationWarning: ssl.PROTOCOL_TLS is deprecated
+    context = SSLContext(ssl_version or ssl.PROTOCOL_SSLv23)
+
+create_node.py::test_create_node[aws_connect]
+create_node.py::test_create_node[aws_connect]
+create_node.py::test_create_node[aws_connect]
+  /usr/local/python/3.10.13/lib/python3.10/site-packages/urllib3/connection.py:407: DeprecationWarning: ssl.match_hostname() is deprecated
+    match_hostname(cert, asserted_hostname)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================================================== 7 passed, 8 warnings in 13.75s ===========================================================
+```
